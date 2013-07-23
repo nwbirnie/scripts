@@ -1,0 +1,25 @@
+[alias]
+	co = checkout
+	st = status
+	ci = commit
+[user]
+	email = nwbirnie@gmail.com
+	name = Nick Birnie
+[push]
+	default = simple
+[diff]
+    tool = kdiff3
+ 
+[merge]
+    tool = kdiff3
+ 
+[mergetool "kdiff3"]
+	path = \"c:/Program Files/KDiff3/kdiff3.exe\" 
+keepBackup = false
+    trustExitCode = false
+ 
+[difftool "kdiff3"]
+path = \"c:/Program Files/KDiff3/kdiff3.exe\" 	
+keepBackup = false
+    trustExitCode = false
+ cmd = \"c:/Program Files/KDiff3/kdiff3.exe\" \"$LOCAL\" \"$REMOTE\"  
